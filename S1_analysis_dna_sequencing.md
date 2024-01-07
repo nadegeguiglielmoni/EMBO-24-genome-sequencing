@@ -1,6 +1,9 @@
 # Analysis of DNA sequencing
 
 [NanoPlot](https://github.com/wdecoster/NanoPlot)
+
+![nanoplot_hifi](s1_pic/nanoplot_hifi.png)
+
 ```sh
 NanoPlot --tsv_stats --fastq ju765.hifi_reads.3Gb.fastq.gz
 ```
