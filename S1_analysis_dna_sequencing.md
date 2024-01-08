@@ -25,6 +25,12 @@ NanoPlot --tsv_stats --fastq duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4
 [jellyfish](https://github.com/gmarcais/Jellyfish)
 [GenomeScope2](https://github.com/tbenavi1/genomescope2.0)
 
+![jellyfish_count](s1_pic/jellyfish_count_hifi.png) 
+
+![jellyfish_hist](s1_pic/jellyfish_hist_hifi.png) 
+
+![genomescope](s1_pic/genomescope_hifi.png) 
+
 ```sh
 jellyfish count --mer-len 21 ju765.hifi_reads.3Gb.fastq.gz
 jellyfish histo -o jellyfish.histo mer_counts.jf
