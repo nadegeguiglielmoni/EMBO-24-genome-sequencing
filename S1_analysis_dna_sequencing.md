@@ -10,6 +10,8 @@
 NanoPlot --tsv_stats --fastq ju765.hifi_reads.3Gb.fastq.gz
 ```
 
+![nanoplot_hifi](s1_pic/nanoplot_hifi_result.png)
+
 ## NanoPlot on Nanopore reads
 
 [NanoPlot](https://github.com/wdecoster/NanoPlot)
@@ -19,6 +21,8 @@ NanoPlot --tsv_stats --fastq ju765.hifi_reads.3Gb.fastq.gz
 ```sh
 NanoPlot --tsv_stats --fastq duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4.2.0.chopper_default.fastq.gz
 ```
+
+![nanoplot_hifi](s1_pic/nanoplot_ont_result.png)
 
 ## GenomeScope on PacBio HiFi reads
 
