@@ -35,3 +35,11 @@ flye --pacbio-hifi ju765.hifi_reads.3Gb.fastq.gz -o out_dir -i 1
 ```sh
 flye --nano-hq duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4.2.0.chopper_default.fastq.gz -o out_dir -i 1
 ```
+
+## Converting graphical fragment assembly (GFA) to fasta file
+
+![gfatofasta](s2_pic/gfatofasta_hifiasm.png)
+
+```sh
+awk '/^S/{print ">"$2;print $3}' assembly.gfa > assembly.fasta
+```
