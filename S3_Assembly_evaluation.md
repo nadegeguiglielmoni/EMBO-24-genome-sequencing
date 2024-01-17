@@ -2,7 +2,13 @@
 
 ## Assembly statistics
 
+[gfastats]()
 
+![gfastats](s3_pic/gfastats.png)
+
+```sh
+gfastats assembly.fasta --nstar-report --locale en_US.UTF-8  --tabular 
+```
 
 ## Ortholog completeness
 
