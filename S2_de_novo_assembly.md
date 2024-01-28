@@ -14,16 +14,6 @@ Goals:
 hifiasm -o output -f 37 -l 3 --primary ju765.hifi_reads.3Gb.fastq.gz
 ```
 
-## hifiasm (PacBio HiFi + Nanopore)
-
-[hifiasm](https://github.com/chhylp123/hifiasm)
-
-![hifiasm_hifi_ont](s2_pic/hifiasm_hifi_ont.png)
-
-```sh
-hifiasm -o output -f 37 -l 3 --ul duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4.2.0.chopper_default.fastq.gz --ul-rate 0.2 --ul-tip 6 --primary ju765.hifi_reads.3Gb.fastq.gz
-```
-
 ## Flye (HiFi)
 
 [Flye](https://github.com/fenderglass/Flye)
@@ -42,6 +32,17 @@ flye --pacbio-hifi ju765.hifi_reads.3Gb.fastq.gz -o out_dir -i 1
 
 ```sh
 flye --nano-hq duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4.2.0.chopper_default.fastq.gz -o out_dir -i 1
+```
+
+## hifiasm (PacBio HiFi + Nanopore)
+
+[hifiasm](https://github.com/chhylp123/hifiasm)
+
+![hifiasm_hifi](s2_pic/hifiasm_hifi.png)
+![hifiasm_hifi_ont](s2_pic/hifiasm_hifi_ont.png)
+
+```sh
+hifiasm -o output -f 37 -l 3 --ul duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4.2.0.chopper_default.fastq.gz --ul-rate 0.2 --ul-tip 6 --primary ju765.hifi_reads.3Gb.fastq.gz
 ```
 
 ## Converting graphical fragment assembly (GFA) to fasta file
