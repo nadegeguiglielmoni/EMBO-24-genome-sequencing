@@ -22,6 +22,8 @@ hifiasm -o output -f 37 -l 3 --ul duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_s
 
 ## Flye (HiFi)
 
+[Flye](https://github.com/fenderglass/Flye)
+
 ![flye_hifi](s2_pic/flye_hifi.png)
 
 ```sh
@@ -29,6 +31,8 @@ flye --pacbio-hifi ju765.hifi_reads.3Gb.fastq.gz -o out_dir -i 1
 ```
 
 ## Flye (Nanopore)
+
+[Flye](https://github.com/fenderglass/Flye)
 
 ![flye_ont](s2_pic/flye_ont.png)
 
@@ -43,3 +47,27 @@ flye --nano-hq duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4.2.0.chopper_d
 ```sh
 awk '/^S/{print ">"$2;print $3}' assembly.gfa > assembly.fasta
 ```
+
+## Checking the graphical fragment assembly (GFA)
+
+[Bandage](https://rrwick.github.io/Bandage/)
+
+### Bandage info
+
+![bandage_info](s2_pic/bandage_info.png)
+
+```sh
+Bandage info input.gfa 
+```
+
+![bandage_info_result](s2_pic/bandage_info_result.png)
+
+### Bandage image
+
+![bandage_image](s2_pic/bandage_image.png)
+
+```sh
+Bandage info input.gfa 
+```
+
+![bandage_image_result](s2_pic/bandage_image_result.jpg)
