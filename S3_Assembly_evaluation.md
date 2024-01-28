@@ -21,3 +21,11 @@ busco --in assembly.fasta --mode genome --out busco_out --evalue 0.001 --limit 3
 ```
 
 ## *k*-mer completeness
+
+[Meryl](https://github.com/marbl/meryl)
+[Merqury](https://github.com/marbl/merqury)
+
+![meryl](s3_pic/meryl.png)
+
+![merqury](s3_pic/merqury.png)
+
