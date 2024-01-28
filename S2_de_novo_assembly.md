@@ -1,5 +1,9 @@
 # *De novo* assembly
 
+Goals:
+* generate draft assemblies using PacBio HiFi and Nanopore reads, separately and combined
+* investigate the assembly graph
+
 ## hifiasm (PacBio HiFi only)
 
 [hifiasm](https://github.com/chhylp123/hifiasm)
