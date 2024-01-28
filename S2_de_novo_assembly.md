@@ -67,7 +67,7 @@ Bandage info input.gfa
 ![bandage_image](s2_pic/bandage_image.png)
 
 ```sh
-Bandage info input.gfa 
+Bandage image input.gfa 
 ```
 
 ![bandage_image_result](s2_pic/bandage_image_result.jpg)
