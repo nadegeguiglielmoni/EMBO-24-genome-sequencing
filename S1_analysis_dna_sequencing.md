@@ -62,3 +62,6 @@ smudgeplot.py hetkmers -o kmcdb_L"$L"_U"$U" < kmcdb_L"$L"_U"$U".dump
 
 smudgeplot.py plot kmcdb_L"$L"_U"$U"_coverages.tsv
 ```
+
+![smudgeplot_result](s1_pic/smudgeplot_smudgeplot.png)
+![smudgeplot_result_log10](s1_pic/smudgeplot_smudgeplot_log10.png)
