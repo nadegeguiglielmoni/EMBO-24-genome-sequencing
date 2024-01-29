@@ -36,7 +36,29 @@ NanoPlot --tsv_stats --fastq duplex.dorado_v0.4.1_dna_r10.4.1_e8.2_400bps_sup_v4
 ![genomescope](s1_pic/genomescope_hifi.png) 
 
 ```sh
-jellyfish count --mer-len 21 ju765.hifi_reads.3Gb.fastq.gz
+jellyfish count --mer-len 21 ju765.hifi_reads.decont.3Gb.fastq.gz
 jellyfish histo -o jellyfish.histo mer_counts.jf
 genomescope2 --input jellyfish.histo --output . --kmer_length 21
+```
+
+## Smudgeplot on PacBio HiFi reads
+
+[Smudgeplot](https://github.com/KamilSJaron/smudgeplot)
+
+![smudgeplot](s1_pic/smudgeplot.png)
+
+```sh
+mkdir tmp_smudge
+ls ju765.hifi_reads.decont.3Gb.fastq.gz > FILES
+kmc -k21 -ci1 -cs10000 @FILES kmcdb tmp_smudge
+kmc_tools transform kmcdb histogram kmcdb_k21.hist -cx10000
+
+L=$(smudgeplot.py cutoff kmcdb_k21.hist L)
+U=$(smudgeplot.py cutoff kmcdb_k21.hist U)
+echo $L $U
+
+kmc_tools transform kmcdb -ci"$L" -cx"$U" dump -s kmcdb_L"$L"_U"$U".dump
+smudgeplot.py hetkmers -o kmcdb_L"$L"_U"$U" < kmcdb_L"$L"_U"$U".dump
+
+smudgeplot.py plot kmcdb_L"$L"_U"$U"_coverages.tsv
 ```
