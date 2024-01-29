@@ -60,10 +60,18 @@ python purge_dups/hist_plot.py --cutoffs cutoffs.tsv --title 'Read depth histogr
 
 [purge_dups](https://github.com/dfguan/purge_dups)
 
+![purge_dups_purge](s3_pic/purge_dups_purge.png)
+
+```sh
+gzip -c minimap2_self.paf
+purge_dups -c PB.base.cov -T cutoffs.tsv -f 0.8 -a 70 -b 200 -m 500 -M 20000 -l 10000 -E 15000 minimap2_self.paf.gz > dups.bed 2> purge_dups.log
+```
 
 ## Getting the purged assembly sequence
 
 [purge_dups](https://github.com/dfguan/purge_dups)
+
+![purge_dups_get_seqs](s3_pic/purge_dups_get_seqs.png)
 
 ```sh
 get_seqs -e -l 10000 -m 0.05 -g 10000 dups.bed assembly.fasta
