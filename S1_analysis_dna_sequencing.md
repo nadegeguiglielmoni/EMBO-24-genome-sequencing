@@ -41,6 +41,8 @@ jellyfish histo -o jellyfish.histo mer_counts.jf
 genomescope2 --input jellyfish.histo --output . --kmer_length 21
 ```
 
+![genomescope_result](s1_pic/linear_plot.png)
+
 ## Smudgeplot on PacBio HiFi reads
 
 [Smudgeplot](https://github.com/KamilSJaron/smudgeplot)
