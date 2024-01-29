@@ -5,6 +5,7 @@
 ## S3: Assembly evaluation, polishing and haplotype purging of the assemblies
 * [Assembly evaluation](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_assembly_evaluation.md)
 * [Haplotig purging](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_haplotig_purging.md)
+* [Polishing](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_polishing.md)
 
 ## Other materials
 
