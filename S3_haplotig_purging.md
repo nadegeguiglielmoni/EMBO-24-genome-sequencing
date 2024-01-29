@@ -45,6 +45,26 @@ minimap2 -x asm5 --q-occ-frac 0.01 split.fa split.fa > minimap2_self.paf
 
 ## Calculating cutoffs
 
+[purge_dups](https://github.com/dfguan/purge_dups)
+
+![purge_dups_calcuts](s3_pic/purge_dups_calcuts.png)
+
+```sh
+gzip minimap2_hifi.paf
+pbcstat -M 500 -f 0.0 -l 0 -p minimap2_hifi.paf.gz
+calcuts -f 0.1 -d 0 PB.stat > cutoffs.tsv 2>calcuts.log 
+python purge_dups/hist_plot.py --cutoffs cutoffs.tsv --title 'Read depth histogram plot' PB.stat hist.png
+```
+
 ## Purging duplications
 
+[purge_dups](https://github.com/dfguan/purge_dups)
+
+
 ## Getting the purged assembly sequence
+
+[purge_dups](https://github.com/dfguan/purge_dups)
+
+```sh
+get_seqs -e -l 10000 -m 0.05 -g 10000 dups.bed assembly.fasta
+```
