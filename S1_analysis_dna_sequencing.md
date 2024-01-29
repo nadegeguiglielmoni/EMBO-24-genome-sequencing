@@ -1,5 +1,9 @@
 # Analysis of DNA sequencing
 
+Goals:
+* assess the quality and length of long-read datasets
+* estimate genome characteristics using *k*-mer approaches
+
 ## NanoPlot on PacBio HiFi reads
 
 [NanoPlot](https://github.com/wdecoster/NanoPlot)
