@@ -6,6 +6,7 @@
 * [Assembly evaluation](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_assembly_evaluation.md)
 * [Haplotig purging](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_haplotig_purging.md)
 * [Polishing](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_polishing.md)
+* [Decontamination](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_decontamination.md)
 
 ## Other materials
 
