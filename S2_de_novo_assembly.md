@@ -76,3 +76,17 @@ Bandage image input.gfa
 ```
 
 ![bandage_image_result](s2_pic/bandage_image_result.jpg)
+
+## Bandage image results for the different assemblies
+Flye: ONT raw (not decontaminated)
+![graph_flye_ont_raw](s2_pic/graph_flye_ont_raw.png)
+Flye: HiFi raw (not decontaminated)
+![graph_flye_hifi_raw](s2_pic/graph_flye_hifi_raw.png)
+Flye: ONT decontaminated
+![graph_flye_ont_decontam](s2_pic/graph_flye_ont_decontam.png)
+Flye: HiFi decontaminated
+![graph_flye_hifi_decontam](s2_pic/graph_flye_hifi_decontam.png)
+Hifiasm: HiFi decontaminated
+![graph_hifiasm_hifi_decontam](s2_pic/graph_hifiasm_hifi_decontam.png)
+Hifiasm: HiFi decontaminated + ONT decontaminated
+![graph_hifiasm_hifi_decontam_ont_decontam](s2_pic/graph_hifiasm_hifi_decontam_ont_decontam.png)
