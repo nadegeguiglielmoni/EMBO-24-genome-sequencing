@@ -86,6 +86,6 @@ Spectra-CN plot (fl) for the purged primary assembly
 
 ## BUSCO
 Metazoa BUSCO set:
-![busco_contigs_purged_metazoa](s3_pics/busco_contigs_purged_metazoa.png)
+![busco_contigs_purged_metazoa](s3_pic/busco_contigs_purged_metazoa.png)
 Nematoda BUSCO set:
-![busco_contigs_purged_nematoda](s3_pics/busco_contigs_purged_nematoda.png)
+![busco_contigs_purged_nematoda](s3_pic/busco_contigs_purged_nematoda.png)
