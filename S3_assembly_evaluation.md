@@ -29,3 +29,6 @@ busco --in assembly.fasta --mode genome --out busco_out --evalue 0.001 --limit 3
 
 ![merqury](s3_pic/merqury.png)
 
+### Merqury examples for the contigs generated from Hifiasm with HiFi+ONT (decontaminated)
+Spectra-CN plot (fl) for the primary assembly
+![contigs_merqury](s3_pic/contigs_merqury.png)
