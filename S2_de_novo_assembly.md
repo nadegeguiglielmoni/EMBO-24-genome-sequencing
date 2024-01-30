@@ -90,3 +90,12 @@ Hifiasm: HiFi decontaminated
 ![graph_hifiasm_hifi_decontam](s2_pic/graph_hifiasm_hifi_decontam.png)
 Hifiasm: HiFi decontaminated + ONT decontaminated
 ![graph_hifiasm_hifi_decontam_ont_decontam](s2_pic/graph_hifiasm_hifi_decontam_ont_decontam.png)
+
+## Assembly comparison
+
+| Reads           | Assembler | Size       | N50     | # contigs |
+| --------------- | --------- | ---------- | ------- | --------- |
+| HiFi            | hifiasm   | 60,019,763 | 389,632 | 326       |
+| HiFi            | Flye      | 83,597,840 | 308,436 | 487       |
+| Nanopore        | Flye      | 75,126,661 | 390,041 | 678       |
+| HiFi + Nanopore | hifiasm   | 59,651,792 | 480,804 | 225       |
