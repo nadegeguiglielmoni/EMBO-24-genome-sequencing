@@ -29,7 +29,7 @@ busco --in assembly.fasta --mode genome --out busco_out --evalue 0.001 --limit 3
 
 ![merqury](s3_pic/merqury.png)
 
-### Quality control metrics for the contigs generated from Hifiasm with HiFi+ONT (decontaminated)
+# Quality control metrics for the contigs generated from Hifiasm with HiFi+ONT (decontaminated)
 
 ## Merqury
 Spectra-CN plot (fl) for the primary assembly
