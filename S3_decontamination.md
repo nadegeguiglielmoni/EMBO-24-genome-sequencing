@@ -32,6 +32,7 @@ minimap2 -ax map-ont assembly.fasta ont_reads.fastq.gz | samtools sort -o minima
 [Blobtools2](https://github.com/blobtoolkit/blobtoolkit)
 
 ![blobtools_create](s3_pic/blobtools_create.png)
+![blobtools_add](s3_pic/blobtools_add.png)
 
 ```sh
 blobtools add --fasta assembly.fasta --cov minimap2_hifi.bam --hits blast.out --busco busco_out/run_metazoa_odb10/full_table.tsv --taxdump taxdump --create blobdir
