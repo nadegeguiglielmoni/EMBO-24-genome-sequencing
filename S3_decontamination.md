@@ -4,6 +4,9 @@
 
 [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
+![blastn](s3_pic/blastn.png)
+![blastn_taxdump](s3_pic/blastn_taxdump.png)
+
 ```sh
 blastn -query assembly.fasta -db nt -outfmt "6 qseqid staxids bitscore std sscinames scomnames" -max_hsps 1 -evalue 1e-25 -out blast.out
 ```
