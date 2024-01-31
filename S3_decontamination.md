@@ -20,6 +20,8 @@ busco --in assembly.fasta --mode genome --out busco_out -l metazoa_odb10
 
 [minimap2](https://github.com/lh3/minimap2)
 
+![minimap2_hifi](s3_pic/minimap2_hifi_blobtools.png)
+
 ```sh
 minimap2 -ax map-hifi assembly.fasta hifi_reads.fastq.gz | samtools sort -o minimap2_hifi.bam
 minimap2 -ax map-ont assembly.fasta ont_reads.fastq.gz | samtools sort -o minimap2_ont.bam
