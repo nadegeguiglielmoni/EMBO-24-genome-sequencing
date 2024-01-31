@@ -27,7 +27,7 @@ minimap2 -ax map-ont assembly.fasta ont_reads.fastq.gz | samtools sort -o minima
 
 ## Create Blobtools directory
 
-[Get taxdump here](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/)
+[Get new_taxdump.tar.gz here](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/)
 
 [Blobtools2](https://github.com/blobtoolkit/blobtoolkit)
 
