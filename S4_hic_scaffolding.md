@@ -4,7 +4,7 @@ Goals:
 * scaffold our contigs using Hi-C data
 * evaluate the Hi-C contact maps
 
-## BWA MEM2 (mapping R1 and R2 reads *separately*)
+## BWA MEM2 (mapping R1 and R2 reads *separately*) on the contigs
 
 [bwa mem2](https://github.com/bwa-mem2/bwa-mem2)
 
@@ -14,10 +14,10 @@ Note that we are treating the paired reads as separate, unpaired files. We need 
 
 ```sh
 bwa-mem2 index assembly.fasta
-bwa-mem2 mem assembly.fasta R1_subseq_10pct.fastq.gz | samtools sort -n -O bam -o R1.bam
+bwa-mem2 mem assembly.fasta R1_subseq_10pct.fastq.gz | samtools sort -n -O bam -o contigs_R1.bam
 ```
 
-Repeat this with the R2 data to create a `R2.bam`.
+**Repeat this with the R2 data to create a `R2.bam`.**
 
 ## Bellerophon (Arima mapping pipeline)
 
@@ -30,7 +30,30 @@ Repeat this with the R2 data to create a `R2.bam`.
 Bellerophon is a conda wrapper for the Arima mapping pipeline. This step finds pairs and filters them to remove pairs with chimeric reads (reads that cover the ligation junction, thus artifically connecting two distant parts of the sequence).
 
 ```sh
-bellerophon --forward R1.bam --reverse R2.bam --quality 20 --output merged.bam
-samtools sort --no-PG -O bam -o merged_sorted.bam merged.bam
+bellerophon --forward contigs_R1.bam --reverse contigs_R2.bam --quality 20 --output contigs_merged.bam
+samtools sort --no-PG -O bam -o contigs_merged_sorted.bam contigs_merged.bam
 ```
+
+## Yet Another Hi-C Scaffolder (YaHS)
+
+[YaHS](https://github.com/c-zhou/yahs)
+
+![yahs](s4_pic/yahs.png)
+
+```sh
+yahs assembly.fasta merged_sorted.bam -o yahs_out
+```
+
+## BWA MEM2 (mapping R1 and R2 reads *separately*) on the scaffolds
+
+![bwa mem](s4_pic/bwa_mem_scaffolds.png)
+
+To obtain the Hi-C contact map for our scaffolded assembly to assess the impact of scaffolding, we need to map the Hi-C reads to the scaffolded assembly. **Don't forget to do this for R2 as well.**
+
+```sh
+bwa-mem2 index scaffolds.fasta
+bwa-mem2 mem scaffolds.fasta R1_subseq_10pct.fastq.gz | samtools sort -n -O bam -o scaffolds_R1.bam
+```
+
+Repeat this with the R2 data to create a `R2.bam`.
 
