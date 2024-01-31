@@ -7,6 +7,7 @@
 * [Haplotig purging](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_haplotig_purging.md)
 * [Polishing](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_polishing.md)
 * [Decontamination](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S3_decontamination.md)
+## [S4: Hi-C scaffolding](https://github.com/nadegeguiglielmoni/EMBO-24-genome-sequencing/blob/main/S4_hic_scaffolding.md)
 
 ## Other materials
 
