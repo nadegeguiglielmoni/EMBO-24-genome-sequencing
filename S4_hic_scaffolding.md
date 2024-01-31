@@ -48,6 +48,9 @@ samtools view -h contigs_merged_sorted.bam | PretextMap -o contigs.pretext
 PretextSnapshot -m contigs.pretext -f png -r 1000 -c 5 --sequences '=full' --minTexels 64 --gridSize 1 --gridColour black '' -o output --prefix contigs
 ```
 
+The result will look like this:
+![pretext_contigs](s4_pic/pretext_contigs.png)
+
 ## Yet Another Hi-C Scaffolder (YaHS)
 
 [YaHS](https://github.com/c-zhou/yahs)
@@ -90,3 +93,7 @@ samtools sort --no-PG -O bam -o scaffolds_merged_sorted.bam scaffolds_merged.bam
 samtools view -h scaffolds_merged_sorted.bam | PretextMap -o scaffolds.pretext
 PretextSnapshot -m scaffolds.pretext -f png -r 1000 -c 5 --sequences '=full' --minTexels 64 --gridSize 1 --gridColour black '' -o output --prefix scaffolds
 ```
+
+The result will look like this:
+
+![pretext_scaffolds](s4_pic/pretext_scaffolds.png)
