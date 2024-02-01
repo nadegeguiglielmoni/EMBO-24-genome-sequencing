@@ -4,6 +4,10 @@ Goals:
 * assess the quality and length of long-read datasets
 * estimate genome characteristics using *k*-mer approaches
 
+The tool NanoPlot gives a representation of the quality and length of long-read datasets. As we have both PacBio HiFi and Nanopore reads, we can observe the main differences between: PacBio HiFi reads have the highest quality, while Nanopore reads can reach a length of 100+ kb. 
+
+GenomeScope gives an estimation of genome size, heterozygosity, unique content, and Smudgeplot estimates the ploidy.
+
 ## NanoPlot on PacBio HiFi reads
 
 [NanoPlot](https://github.com/wdecoster/NanoPlot)
