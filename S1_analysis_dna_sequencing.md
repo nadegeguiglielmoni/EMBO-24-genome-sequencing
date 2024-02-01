@@ -51,6 +51,8 @@ genomescope2 --input jellyfish.histo --output . --kmer_length 21
 
 ![genomescope_result](s1_pic/linear_plot.png)
 
+Two peaks can be distinguished, the first one being heterozygous *k*-mers and the second one homozygous *k*-mers. The model is not fitting well due to a trail of *k*-mers leading to the first peak, and results in an incorrect genome size estimation (which should be around 50 Mb). This trail of *k*-mers is due to alternative alleles as we have used a pool of individuals (in culture) to generate this dataset.
+
 ## Smudgeplot on PacBio HiFi reads
 
 [Smudgeplot](https://github.com/KamilSJaron/smudgeplot)
@@ -75,3 +77,5 @@ smudgeplot.py plot kmcdb_L"$L"_U"$U"_coverages.tsv
 
 ![smudgeplot_result](s1_pic/smudgeplot_smudgeplot.png)
 ![smudgeplot_result_log10](s1_pic/smudgeplot_smudgeplot_log10.png)
+
+The strong signal around 1/2 2N supports a prediction of a diploid genome.
